@@ -6,7 +6,7 @@ console.log(elemAffichage);
 
 // variable global
 let etape = 1;
-let etapeMax = 22;
+let etapeMax = 23;
 let exercice = "1";
 let var1;
 let var2;
@@ -141,6 +141,17 @@ function myFunc() {
         break;
 
         case 11:
+            exercice = "8";
+            var1 = [50,30,4040,85,65];
+            var2 = arrayToString(var1);
+            var3 = exo8(var1);
+            elemAffichage[1].innerHTML = 'Créez une fonction qui prend un tableau et renvoie le premier élément du tableau.';
+            elemAffichage[2].innerHTML = `${var2} est un tableau de valeurs`;
+            elemAffichage[3].innerHTML = `${var3} est le premier élément du tableau`;
+            elemAffichage[4].innerHTML = ``;
+        break;
+
+        case 12:
             exercice = "9";
             var1  = document.location.href;
             elemAffichage[1].innerHTML = 'Écrivez un programme JavaScript pour récupérer l’URL d’un site Web.';
@@ -149,7 +160,7 @@ function myFunc() {
             elemAffichage[4].innerHTML = ``;
         break;
 
-        case 12:
+        case 13:
             exercice = "10";
             var1 = prompt("saisissez un nombre");
             var2 = prompt("saisissez un nombre");
@@ -161,7 +172,7 @@ function myFunc() {
             elemAffichage[4].innerHTML = ``;
         break;
 
-        case 13:
+        case 14:
             exercice = "11";
             var1 = parseInt(prompt("saisissez un nombre"));
             var2 = parseInt(prompt("saisissez un nombre"));
@@ -172,7 +183,7 @@ function myFunc() {
             elemAffichage[4].innerHTML = ``;
         break;
 
-        case 14:
+        case 15:
             exercice = "12";
             var1 = prompt("saisissez un nombre d'heure");
             var2 = parseInt(var1) * 60 * 60;
@@ -182,7 +193,7 @@ function myFunc() {
             elemAffichage[4].innerHTML = ``;
         break;
 
-        case 15:
+        case 16:
             exercice = "13";
             var1 = exo13(parseInt(prompt("saisissez un nombre positif, negatif ou zero")));
             elemAffichage[1].innerHTML = 'Créez une fonction qui prend un nombre et renvoie TRUE s’il est inférieur ou égal à zéro, sinon retournez FALSE';
@@ -191,7 +202,7 @@ function myFunc() {
             elemAffichage[4].innerHTML = ``;
         break;
 
-        case 16:
+        case 17:
             exercice = "14";
             var1 = prompt("saisissez un nombre");
             var2 = prompt("saisissez un nombre");
@@ -202,7 +213,7 @@ function myFunc() {
             elemAffichage[4].innerHTML = ``;
         break;
 
-        case 17:
+        case 18:
             exercice = "15";
             var1 = prompt("saisissez un nombre");
             var3 = exo15(parseInt(var1));
@@ -212,7 +223,7 @@ function myFunc() {
             elemAffichage[4].innerHTML = ``;
         break;
 
-        case 18:
+        case 19:
             exercice = "16";
             var1 = prompt("saisissez un nombre d'heure(s)");
             var2 = prompt("saisissez un nombre de minute(s)");
@@ -222,7 +233,7 @@ function myFunc() {
             elemAffichage[3].innerHTML = `équivaut à ${var3} secondes`;
             elemAffichage[4].innerHTML = ``;
         break;
-        case 19:
+        case 20:
             exercice = "17";
             var1 = [50,30,4040,85,65];
             var2 = arrayToString(var1);
@@ -232,7 +243,7 @@ function myFunc() {
             elemAffichage[3].innerHTML = `${var3} est le même tableau mais inversé!`;
             elemAffichage[4].innerHTML = ``;
         break;
-        case 20:
+        case 21:
             exercice = "18";
             var1 = [50,30,4040,85,65];
             var2 = arrayToString(var1);
@@ -242,7 +253,7 @@ function myFunc() {
             elemAffichage[3].innerHTML = `${var3} est le derniere élément du tableau`;
             elemAffichage[4].innerHTML = ``;
         break;
-        case 21:
+        case 22:
             exercice = "19";
             var1 = prompt('entré une valeur "string" ou "numérique"');
             var2 = prompt('entré une valeur "string" ou "numérique"');
@@ -252,7 +263,7 @@ function myFunc() {
             elemAffichage[3].innerHTML = `return ${var3}`;
             elemAffichage[4].innerHTML = ``;
         break;
-        case 22:
+        case 23:
             exercice = "20";
             var1 = prompt('veuillez cliquer sur la touche entrée pour true sinon entrer une valeur pour false');
             var3 = exo20(var1);
