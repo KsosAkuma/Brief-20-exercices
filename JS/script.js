@@ -46,7 +46,7 @@ function myFunc() {
             break;
 
         case 2:
-            exercice = "1";
+            exercice = "1 resultat";
             exo1();
             elemAffichage[1].innerHTML = 'Inverser les valeurs de deux variables';
             elemAffichage[2].innerHTML = `La première variable vaut ${var1}`;
